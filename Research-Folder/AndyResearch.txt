@@ -1,0 +1,34 @@
+Next.js: 
+- https://nextjs.org/learn/foundations/about-nextjs?utm_source=next-site&utm_medium=nav-cta&utm_campaign=next-website
+- Went through the tutorial provided on the website above
+- Created my first Next.js app and ran it locally
+- Also, learned about the different functionalities of React such as props, state, and hooks
+- https://www.youtube.com/watch?v=MFuwkrseXVE
+
+Azure:
+- Went through the Azure DevOps site multiple times and messed with the different features
+- Explored the settings and other things that you can configure
+- Set up Azure repo and made sure everyone was able to clone it to their computer
+
+
+SQL/Database Research:
+- Reviewed former projects I have created that worked with databased on the backend
+- https://www.w3schools.com/sql/sql_quickref.asp
+- Reviewed content such as joins, unions, subqueries, etc.
+- https://www.youtube.com/watch?v=Cz3WcZLRaWc
+- Dynamo, Redis, better for key-value storage, MySQL and Postgres better for purely relational data
+- Relational datbases are better for consistency
+- Relational databases use the keys to relate different tables and only store info in tables
+- Non-relational (NoSQL) will use key-value stores, document stores, and graph databases to connect the data
+
+React Research:
+- https://learn.microsoft.com/en-us/training/paths/react/
+- Created example React App with custom components
+- Worked with props and passing complex objects to components
+- Went through the tutorial on state
+
+AWS RDS:
+- https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
+- Read through best practices on using Amazon RDS as well as how to configure the DB instance
+- https://www.youtube.com/watch?v=Ng_zi11N4_c
+- Also went through a tutorial on AWS Academy in database class
