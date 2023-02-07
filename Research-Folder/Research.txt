@@ -1,0 +1,16 @@
+Database Benefits
+    - MySQL
+        - Provides data protection, which helps with security and dependability
+        - High Efficiency
+        - 24/7 Uptime
+        - Scalability
+
+    - Amazon Aurora
+        - Has continuous backups
+        - Built-in security features
+        - Highly scalable
+
+    - Amazon RDS
+        - Helpful when building web and mobile applications
+        - Fully managed database
+        - Flexibile payment plan with pay-per-use pricing
