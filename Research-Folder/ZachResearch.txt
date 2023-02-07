@@ -14,3 +14,29 @@ Database Benefits
         - Helpful when building web and mobile applications
         - Fully managed database
         - Flexibile payment plan with pay-per-use pricing
+
+        # Task 442
+        The link to the NextJS crash course video: https://www.youtube.com/watch?v=mTz0GXj8NN0
+
+        # Task 444
+        Research was conducted for this task at: https://aws.amazon.com/rds/features/
+
+        # Task 445
+        Watched a Youtube on the functionalities and features of Amazon RDS. 
+        Learned about how to set it up, its benefits, and how to connect SQL with it. 
+        https://www.youtube.com/watch?v=
+        
+        # Task 448
+        I looked through Azure DevOps Documentation and saw new updates and changes that have been implemented
+        over the past few months. Here is the link to the documentation and its subdirectory files.
+         https://learn.microsoft.com/en-us/azure/devops/?view=azure-devops
+
+         # Task 446
+         Looked at a few SQL documentations but spent a lot of time on AWS, 
+         looking at their AWS documentation and articles:
+        https://docs.aws.amazon.com/redshift/latest/dg/cm_chap_SQLCommandRef.html
+        https://docs.aws.amazon.com/pdfs/redshift/latest/dg/redshift-dg.pdf#cm_chap_SQLCommandRef
+
+        # Task 447
+        I conducted my research by using a SQL Tutorial video on Youtube:
+         https://www.youtube.com/watch?v=h0nxCDiD-zg
