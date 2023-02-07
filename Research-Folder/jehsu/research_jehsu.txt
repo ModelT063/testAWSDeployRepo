@@ -1,0 +1,31 @@
+
+Next.js Tutorial:
+
+About next.js:
+- next.js = flexible react framework giving building blocks for web apps
+- building blocks of a web app:
+	- user interface, routing, data fetching, rendering, integrations, infrastructure, performance, scalability, developer experience
+- react = javascript library for building interactive user interfaces
+- next.js handles the tooling and configuration needed for React
+- build UI with react, then add next.js features to solve common application requirements, like routing, data fetching, and integrations
+
+From JavaScript to react:
+- document object model (DOM) - object representation of the HTML elements
+	- acts as a bridge between code and user interface; tree-like structure
+- DOM allows targeted manipulation
+
+Three core React concepts:
+1) components
+	- building blocks of the UI
+	- in react, components show up as functions
+2) props
+	- pieces of information passed as properties to react components (custom arguments)
+3) state
+	- any information that changes over time, usually triggered by user interaction
+	- managed by react hooks
+
+SQL:
+Watched https://www.youtube.com/watch?v=h0nxCDiD-zg&ab_channel=KevinStratvert 
+
+Amazon RDS:
+Watched https://www.youtube.com/watch?v=vp_uulb5phM&ab_channel=TinyTechnicalTutorials
