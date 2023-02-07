@@ -1,0 +1,51 @@
+nextJS -------------------
+
+DOM - object rep. of the HTML elements
+    Acts as bridge between your code and UI
+    Manipulate DOM to target specific elements and change their style and content
+
+To add a header to project:
+    create app with getElementBy
+    create new header element - CreateElement
+    create header content - createTextNode
+    appendChild for headerContent -> header and header -> app
+
+HTML represents initial page content and DOM represents updated page content after using JS
+
+JSX - syntax entension for JS
+
+React Framework reduces workload of giving specific instructions
+
+React Notes
+    component - a function that returns UI elements
+        capitalize React components to distinguish from HTML and JS
+        use components like regular HTML tags <>
+    props - pieces of info that can be passed as properties to components
+        they are objects
+        object destructuring - explicitly name the values 
+    hooks - allow to add additional logic like state to components 
+        useState() - store and increment {}
+            returns array
+            if const[] = useState(), arg1 is value, arg2 is update functions
+
+NextJS
+    Directory "app" for build
+    Throw error with export default 
+    Loading file (use export default function Loading()) can be used to, as one would
+    expect, display a loading page/spinner/etc.
+    useclient - onClick, useState, useEffect
+    fetch data from API w/ server component
+        export default async function Home {
+            const data = await fecthc ( link )
+            const res = await data.json()
+            console.log(res)
+        }
+
+Databases ------------------------
+
+AWS Intro : https://www.youtube.com/watch?v=tLp8pPNdDXQ
+
+SQL Review : https://www.youtube.com/watch?v=OfM5lC-7R4Y
+
+MySQL seems to be the most common database choice, although others are similar to it. It seems relatively inexpensive compared to (possibly)
+Oracle. 
