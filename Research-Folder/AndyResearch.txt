@@ -4,6 +4,7 @@ Next.js:
 - Created my first Next.js app and ran it locally
 - Also, learned about the different functionalities of React such as props, state, and hooks
 - https://www.youtube.com/watch?v=MFuwkrseXVE
+- Was able to get experience using JSX by using this framework and tutorial
 
 Azure:
 - Went through the Azure DevOps site multiple times and messed with the different features
@@ -26,9 +27,33 @@ React Research:
 - Created example React App with custom components
 - Worked with props and passing complex objects to components
 - Went through the tutorial on state
+- Also used JSX in this tutorial
 
 AWS RDS:
 - https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
 - Read through best practices on using Amazon RDS as well as how to configure the DB instance
 - https://www.youtube.com/watch?v=Ng_zi11N4_c
 - Also went through a tutorial on AWS Academy in database class
+
+Connecting to DB: 
+- https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-nodejs.rds.html
+- Will need to gather all of the information about the DB and store it in a .env file
+- Link contains the code needed to make and test the connection to the database
+ 
+MaterialUI:
+- https://mui.com/material-ui/getting-started/overview/
+- Looked through the different components that MUI offers
+- 
+
+Github Pull Request:
+- https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+- Also made sure the repoistory was set up and everyone could pull/push properly
+
+Express:
+- https://expressjs.com/
+- https://www.youtube.com/watch?v=oK5AfB7qX-s
+- Also have previous experience from 3720 developing an API with express
+
+Cognito:
+- https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html
+- This page contains plenty of information on how the service works, code examples for many different useful scenarios, and best practices
