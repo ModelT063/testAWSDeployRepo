@@ -46,27 +46,32 @@ SPRINT 1:
     
     Task #475
     Link for pull requests example: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+    This link showed me how to create pull requests for github
 
     Task #517
     Link for the express: https://expressjs.com/en/5x/api.html
+    This link taught me about express and somme of its features
 
     Task #519
     Link for the youtube video: https://www.youtube.com/watch?v=TcvOgwQPsSo
+    This link taught me how to incorporate Express API into the functionalities that we may need
 
     Task #522
     Link for how to connect to AWS Database: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.Connect.html
+    This link provided instructions on how to connect to the AWS database
 
     Task #526
     Link for how to get started with AWS Cognito: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-getting-started.html
+    This link provided me with how to get started with AWS Cognito
 
     Task #510
     Link for Material UI: https://mui.com/
+    This link provided a breakdown of what MaterialUI is and what is many capabiilites are 
 
     Task #511
     Link for Material UI Icon Tutorial: https://www.youtube.com/watch?v=AVonkBWYeDU
+    This video gave instructions on how to create an Icon and then use it in an API
 
     Task #515
     Link for JSX documentation: https://reactjs.org/docs/jsx-in-depth.html
-
-    Task #519
-    Link for the API Express Video: https://www.google.com/search?q=api+express+js+youtube&rlz=1C1CHBF_enUS990US990&oq=api+express+js+youtube&aqs=chrome..69i57j69i60l2.8212j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:0aff8b87,vid:TcvOgwQPsSo
+    This link provided documentation for the JSX
