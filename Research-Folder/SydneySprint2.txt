@@ -1,0 +1,139 @@
+User Story 208: Amazon Cognito -------------------------- 
+What is it? It provides authentication, authorization, and
+user management for web and mobile apps
+    Users can sign in directly with login info or thru a 3rd party
+    User pools: user dirs that provide sign up and sign in options for app Users
+    Identity pools: allow you to grant users access to other AWS services
+Average Cognito scenario:
+    user signs in with user pool -> (if auth) receives user pool token -> app exchanges tokens
+    for AWS creds thru identity pool -> user can use creds to access other AWS services
+What do user pools offer? 
+    Sign up, sign in
+    Built in, customizable UI for sign in
+    Social media sign in 
+    User dir mgt and user profiles
+    Security feats
+    Customized workflow 
+API
+    Depending on API operation, you may have to provide authorization
+    with IAM creds/access tokens/session tokens/client secret/etc. 
+    Unauthenticated operations are best security practice for apps you distribute to 
+    users because you don't need secrets --> probably not preferable for our app
+    Token authenticated user ops may be beneficial for our app  
+  
+Setting up a conneciion: https://www.youtube.com/watch?v=8a0vtkWJIA4
+-manage user pools
+  -Create user pool
+  -Step through settings
+  -Username or email address/phone number
+  -Password policies
+-App client settings
+  -Callback URL
+  -Signout URL
+-Domain Name
+
+User Story 326: MUI ------------------------------
+Material UI is comprehensive, packaged with default styles, and optimized to 
+work with styled components (vs MUI Base, with a skeletal setup)
+
+Ex: 
+import * as React from 'react';
+import Button from '@mui/material/Button';
+
+export default function MyApp() {
+  return (
+    <div>
+      <Button variant="contained">Hello World</Button>
+    </div>
+  );
+}
+
+Uses material UI button 
+
+MUI is mobile-first, and then scales up. For proper rendering and touch zooming for all devices,
+we can add this to the head component: 
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+Youtube Tutorial for integrating icons: https://www.youtube.com/watch?v=AVonkBWYeDU
+
+Install: npm install @material-ui/icons
+
+Use: import [icon] from '@material-ui/icons/[nameoficon]'
+
+<[icon] />
+-can use colors with color = [color] inside tags
+-can change size with fontSize 
+
+-can apply icons to buttons:
+  <Button
+    startIcon = {[nameoficon1]}
+    endIcon = [nameoficon2]} >
+  </Button>
+
+
+User Story 351: Express ------------------- 
+
+Youtube Tutorial: https://www.youtube.com/watch?v=-MTSQjw5DrM
+
+Most APIs are RESTful -- Representational state transfer
+
+Request: 
+"
+[verb] /[uri]
+Accept: [...]
+Authorization: [...]
+Connection: [...]
+"
+"
+Response: 
+[status code]
+Server: 
+Age:
+Connection: 
+"
+
+-Can use CURL, VSCode extension, Insomnia to make API requests
+
+const express = require('express')
+const app = express()
+const PORT = [#]
+
+app.use(express.json()) //Middleware
+
+app.get([uri], (req, res) => {
+  res.status(200)
+});
+
+app.post('/[uri]/:[id], (req, res) => {
+
+  const { id } = req.params;
+  const { logo } = req.body;
+
+  if (!logo) {
+    res.status(418).send({message: ----})
+  }
+})
+
+User Story 327: JSX ---------------
+Ex: declare variable name and use it inside JSX with curly braces
+  const name = 'Sydney'
+  const element = <h1> Hello, {name} </h1>
+
+You can put any valid JavaScript expression inside curly braces in JSX 
+  -function call, variables, etc. 
+
+After compilation, JSX expressions become regular JavaScript function calls
+and evaluate to JavaScript objects. 
+
+Valid:
+  function getGreeting(user) {
+    if (user) {
+      return <h1> Hello, {formatName(user)}!</h1>;
+    }
+    return <h1> Hello, Stranger. </h1>;
+  }
+
+Can use JSX to embed a JavaScript expression in an attribute like a link
+
+JSX tags can contain children
+
