@@ -37,3 +37,5 @@ Connecting MySQL DB to AWS:
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToInstance.html
 
 MaterialUI helpful links: https://mui.com/material-ui/getting-started/templates/
+
+AWS academy cognate resources: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-getting-started.html
