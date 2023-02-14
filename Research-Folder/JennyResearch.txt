@@ -29,3 +29,11 @@ Watched https://www.youtube.com/watch?v=h0nxCDiD-zg&ab_channel=KevinStratvert
 
 Amazon RDS:
 Watched https://www.youtube.com/watch?v=vp_uulb5phM&ab_channel=TinyTechnicalTutorials
+
+MySQL:
+Got set up using: https://medium.com/macoclock/mysql-on-mac-getting-started-cecb65b78e
+
+Connecting MySQL DB to AWS:
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToInstance.html
+
+MaterialUI helpful links: https://mui.com/material-ui/getting-started/templates/
