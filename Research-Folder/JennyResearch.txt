@@ -38,4 +38,8 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToInstance.ht
 
 MaterialUI helpful links: https://mui.com/material-ui/getting-started/templates/
 
-AWS academy cognate resources: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-getting-started.html
+AWS academy cognito resources: 
+- https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-getting-started.html
+- https://docs.amplify.aws/lib/auth/getting-started/q/platform/js/#option-1-use-pre-built-ui-components
+
+Express resource: https://www.robinwieruch.de/node-express-server-rest-api/
