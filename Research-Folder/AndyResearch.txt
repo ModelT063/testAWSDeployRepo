@@ -57,3 +57,8 @@ Express:
 Cognito:
 - https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html
 - This page contains plenty of information on how the service works, code examples for many different useful scenarios, and best practices
+
+MySQL2:
+- https://planetscale.com/blog/how-to-prevent-sql-injection-attacks-in-node-js
+- MySQL2 prevents SQL injection attacks by not allowing multiple statements and using placeholders for variables inside of queries
+- https://github.com/sidorares/node-mysql2/tree/master/documentation
