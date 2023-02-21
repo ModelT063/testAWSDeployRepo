@@ -1,9 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
+import users from "./api/users";
+import { User, UserStatus, UserType } from "@/types/user";
+import { walkUpBindingElementsAndPatterns } from "typescript";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -26,7 +29,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -119,5 +122,27 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
+}
+
+export async function getStaticProps() {
+  // This just executes the api method upon page loading just as a proof of concept
+  const user: User = {
+    Username: "lol",
+    User_Type: UserType.driver,
+    User_Status: UserStatus.active,
+    F_Name: "test",
+    L_Name: "usertest",
+    Points: 0,
+  };
+
+  const data = await fetch("http://localhost:3000/api/users", {
+    method: "POST",
+    body: JSON.stringify(user),
+  });
+
+  console.log(data);
+  return {
+    props: {},
+  };
 }
