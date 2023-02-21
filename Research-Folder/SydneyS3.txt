@@ -1,0 +1,17 @@
+Alias Attributes
+-Currently, the user logs in with an email but we need to set it so that the admins/sponsors/users can change the 
+username alias to a unique username
+-Use alias Attributes
+-Amplify 
+    https://docs.amplify.aws/guides/authentication/managing-user-attributes/q/platform/js/#writing-and-updating-custom-attributes
+
+Integrate Front-End with Cognito
+-https://docs.amplify.aws/lib/auth/getting-started/q/platform/js/#enable-sign-up-sign-in-and-sign-out
+-https://docs.amplify.aws/lib/auth/start/q/platform/js/
+    -Use Amplify.configure()
+
+Approved by Sponsors and admins
+-admin-confirm-sign-up --> used for approving the user's sign up process and information
+    -https://docs.aws.amazon.com/cognito/latest/developerguide/signing-up-users-in-your-app.html
+-Explore idea of lambda triggers for approving sign in requests. This sends a request to an admin to approve the request for sign in. 
+    -https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-lambda-pre-sign-up.html
