@@ -5,6 +5,9 @@ import styles from "@/styles/Home.module.css";
 import users from "./api/users";
 import { User, UserStatus, UserType } from "@/types/user";
 import { walkUpBindingElementsAndPatterns } from "typescript";
+import { Amplify } from 'aws-amplify';
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
 
 const inter = Inter({ subsets: ["latin"] });
 
