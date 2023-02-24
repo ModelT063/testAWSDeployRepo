@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import users from "./api/users";
+import users from "./api/users/create/adduser";
 import { User, UserStatus, UserType } from "@/types/user";
 import { walkUpBindingElementsAndPatterns } from "typescript";
 import { Amplify } from 'aws-amplify';
