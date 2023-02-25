@@ -1,26 +1,20 @@
 import {db} from "@/lib/db";
-import { User, UserType, UserStatus } from "@/types/user";
+import { CatalogSettings } from "@/types/catalogsettings";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-    if (req.method !== "PUT") {
+    if (req.method === "POST") {
         res.setHeader("Allow", ["PUT"]);
         return res.status(405).end(`Method ${req.method} Not Allowed`);
     }
     try {
         console.log(req.body);
-        const updatedUser: User = req.body;
+        const updatedCatalog: CatalogSettings = req.body;
         db.connect( (err) => {
             if (err) throw err;
-            db.query("UPDATE Users SET Username = ?, User_Type = ?, User_Status = ?," +
-            "F_Name = ?, L_Name = ?, Points = ? WHERE User_ID = ?", 
+            db.query("UPDATE CatalogSettings SET Catalog_Name = ? WHERE Catalog_ID = ?", 
             [
-                updatedUser.Username,
-                updatedUser.User_Type,
-                updatedUser.User_Status,
-                updatedUser.F_Name,
-                updatedUser.L_Name,
-                updatedUser.Points,
+                updatedCatalog.Catalog_Name,
                 parseInt(req.query.id as string)
             ], (error: any, results: any, fields: any) => {
                 if (error) throw error;
