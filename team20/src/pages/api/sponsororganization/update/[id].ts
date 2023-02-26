@@ -1,5 +1,5 @@
 import {db} from "@/lib/db";
-import { CatalogSettings } from "@/types/catalogsettings";
+import { SponsorOrganization, OrganizationStatus } from "@/types/sponsororganization";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
@@ -9,20 +9,25 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     }
     try {
         console.log(req.body);
-        const updatedCatalog: CatalogSettings = req.body;
+        const updatedOrganization: SponsorOrganization = req.body;
         db.connect( (err) => {
             if (err) throw err;
-            db.query("UPDATE CatalogSettings SET Catalog_Name = ? WHERE Catalog_ID = ?", 
+            db.query("UPDATE SponsorOrganizations SET Organization_Name = ?, Points_Ratio = ?, Address = ?, " + 
+            "Organization_Status = ?, Catalog_ID = ? WHERE Sponsor_Org_ID = ?", 
             [
-                updatedCatalog.Catalog_Name,
+                updatedOrganization.Organization_Name,
+                updatedOrganization.Points_Ratio,
+                updatedOrganization.Address,
+                updatedOrganization.Organization_Status,
+                updatedOrganization.Catalog_ID,
                 parseInt(req.query.id as string)
             ], (error: any, results: any, fields: any) => {
                 if (error) throw error;
                 return res.status(200).json(results);
-            });
-        });
+            })
+        })
     } catch (e) {
         console.log(e);
         return res.status(500).end();
     }
-};
+}
