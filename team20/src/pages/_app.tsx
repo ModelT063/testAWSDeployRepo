@@ -6,6 +6,8 @@ export default function App({ Component, pageProps }: AppProps) {
 }
 */
 
+import Navbar from '../components/Navbar';
+
 import { Amplify } from 'aws-amplify';
 
 import { withAuthenticator } from '@aws-amplify/ui-react';
@@ -17,6 +19,10 @@ Amplify.configure(awsExports);
 function App({ signOut, user }) {
   return (
     <>
+      <div>
+        <Navbar/>
+      </div>
+      <h1>HomePage</h1>
       <h1>Hello {user.username}</h1>
       <button onClick={signOut}>Sign out</button>
     </>
