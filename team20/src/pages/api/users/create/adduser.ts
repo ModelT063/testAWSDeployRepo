@@ -24,7 +24,6 @@ export default async(req: NextApiRequest, res: NextApiResponse) => {
         if (error) throw error;
         return res.status(200).json(results);
       });
-      //db.end();
     });
   } catch (e) {
     console.log(e);

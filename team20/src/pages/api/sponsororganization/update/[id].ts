@@ -1,5 +1,5 @@
 import {db} from "@/lib/db";
-import { User, UserType, UserStatus } from "@/types/user";
+import { SponsorOrganization, OrganizationStatus } from "@/types/sponsororganization";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
@@ -9,26 +9,25 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     }
     try {
         console.log(req.body);
-        const updatedUser: User = req.body;
+        const updatedOrganization: SponsorOrganization = req.body;
         db.connect( (err) => {
             if (err) throw err;
-            db.query("UPDATE Users SET Username = ?, User_Type = ?, User_Status = ?," +
-            "F_Name = ?, L_Name = ?, Points = ? WHERE User_ID = ?", 
+            db.query("UPDATE SponsorOrganizations SET Organization_Name = ?, Points_Ratio = ?, Address = ?, " + 
+            "Organization_Status = ?, Catalog_ID = ? WHERE Sponsor_Org_ID = ?", 
             [
-                updatedUser.Username,
-                updatedUser.User_Type,
-                updatedUser.User_Status,
-                updatedUser.F_Name,
-                updatedUser.L_Name,
-                updatedUser.Points,
+                updatedOrganization.Organization_Name,
+                updatedOrganization.Points_Ratio,
+                updatedOrganization.Address,
+                updatedOrganization.Organization_Status,
+                updatedOrganization.Catalog_ID,
                 parseInt(req.query.id as string)
             ], (error: any, results: any, fields: any) => {
                 if (error) throw error;
                 return res.status(200).json(results);
-            });
-        });
+            })
+        })
     } catch (e) {
         console.log(e);
         return res.status(500).end();
     }
-};
+}
