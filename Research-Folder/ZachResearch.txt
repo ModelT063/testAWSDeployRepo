@@ -98,3 +98,15 @@ SPRINT 3:
     - "Password does not meet criteria, please try again"
     - OR " Password must have at least one uppercase, lowercase, number, and symbol 
             character as well as be at least 8 characters in length"
+
+
+SPRINT 4
+- Task #590: 
+    - Our branch structure will consist of using a sub branch for each sprint 
+      and then merging that branch to the main branch.
+
+- Task #596 and #603
+    - Learned how to rebase safely and merge branch safely
+
+- Task #594
+    - Learned how to branch for sprint 4
