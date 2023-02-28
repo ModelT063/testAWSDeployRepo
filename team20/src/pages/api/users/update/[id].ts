@@ -12,10 +12,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         const updatedUser: User = req.body;
         db.connect( (err) => {
             if (err) throw err;
-            db.query("UPDATE Users SET Username = ?, User_Type = ?, User_Status = ?," +
+            db.query("UPDATE Users SET Email = ?, User_Type = ?, User_Status = ?," +
             "F_Name = ?, L_Name = ?, Points = ? WHERE User_ID = ?", 
             [
-                updatedUser.Username,
+                updatedUser.Email,
                 updatedUser.User_Type,
                 updatedUser.User_Status,
                 updatedUser.F_Name,

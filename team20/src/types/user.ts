@@ -11,7 +11,7 @@ export enum UserStatus {
 
 export type User = {
   User_ID?: number;
-  Username: string;
+  Email: string;
   User_Type: UserType;
   User_Status: UserStatus;
   F_Name: string;

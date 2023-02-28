@@ -14,7 +14,7 @@ export default async(req: NextApiRequest, res: NextApiResponse) => {
       if (err) throw err;
       db.query("INSERT INTO Users VALUES (?, ?, ?, ?, ?, ?, ?)", [
         newUser.User_ID,
-        newUser.Username,
+        newUser.Email,
         newUser.User_Type,
         newUser.User_Status,
         newUser.F_Name,
