@@ -16,7 +16,7 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from './aws-exports';
 Amplify.configure(awsExports);
 
-function App({ signOut, user }) {
+function App({ signOut, user }: {signOut: any; user: any}) {
   return (
     <>
       <div>
