@@ -3,7 +3,7 @@ import NavItem from "./NavItem";
 import Link from "next/link";
 
 const MENU_LIST = [
-  { text: "Home", href: "/_app" },
+  { text: "Home", href: "/Index" },
   { text: "Account Info", href: "/_account" },
 ];
 const Navbar = () => {
