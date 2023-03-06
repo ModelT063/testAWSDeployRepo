@@ -1,4 +1,4 @@
-const awsmobile = {
+export const awsmobile = {
   "aws_project_region": "us-east-1",
   "aws_cognito_identity_pool_id": "us-east-1:b9aacf6f-4dbf-4488-a991-9c0dfa22c6fa",
   "aws_cognito_region": "us-east-1",
@@ -25,6 +25,3 @@ const awsmobile = {
       "EMAIL"
   ]
 };
-
-
-export default awsmobile;
